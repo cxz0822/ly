@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #showT {
+            height: 160px;
+            /* background:url(images/jeWkqj.png)no-repeat center;*/
+            background-color: rgba(0, 15, 23, .85);
+            margin: 0;
+            padding: 0;
+            width: 0;
+            position: absolute;
+            bottom: 0;
+            transition: all 1s ease-in-out 1s;
+        }
+        .box{
+            position: relative;
+            width:912px;
+            margin:0 auto;
+          /*  visibility: hidden;*/
+            transition: all 1s ease-in-out 1s;
+        }
+        .pic {
+            position: absolute;
+            width: 912px;
+            left:0;
+            top:0;
+            height: 160px;
+        }
+
+        .show_IMG {
+            width: 112px;
+            height: 112px;
+            position: absolute;
+            right: 24px;
+            top: 34px;
+        }
+
+        .btn {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 172px;
+            top: 12px;
+            transition: 0.3s;
+        }
+
+        .img1 {
+            width: 137px;
+            height: 138px;
+            position: absolute;
+            left: -113px;
+            top: 0;
+            visibility: hidden;
+        }
+
+        .btn:hover {
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+<div id="showT">
+    <div class="box">
+        <div class="pic">
+            <img src="images/jeWkqj.png">
+        </div>
+        <div class="show_IMG">
+            <img src="images/download.png">
+        </div>
+    </div>
+
+
+    <img class="img1" src="images/GVkOQL.png">
+
+    <div class="btn">
+        <img class="img4" src="images/cSylHa.png">
+    </div>
+</div>
+</body>
+</html>
+<script>
+    window.onload = function () {
+        var s = document.querySelector("#showT");
+        var close = document.querySelector(".btn");
+        var qi = document.querySelector(".img1");
+        var box = document.querySelector(".box");
+        s.style.width = "100%";
+
+        box.style.width="100%";
+       /* box.style.width="100%";*/
+        close.onclick = function () {
+            s.style.width = "0px";
+            /*box.style.width = "0px";*/
+            s.webkitTransition = "0.6s";
+            /*box.webkitTransition = "0.6s";*/
+            window.setTimeout(function () {
+                qi.style.visibility = "visible";
+
+            }, 3000);
+        }
+        qi.onclick = function () {
+            s.style.width = "100%";
+            s.webkitTransition = "0.6s";
+            /*box.style.width = "100%";
+            box.webkitTransition = "0.6s";*/
+            qi.style.visibility = "hidden";
+        }
+    }
+</script>
