@@ -493,7 +493,7 @@ div.myTc-list {
     font-size: 22px;
     font-weight: bold;
     color: #333;
-    margin-left: 48px;
+    margin-left: 30px;
     margin-top: 15px;
     display: inline-block;
     position: relative;
@@ -519,7 +519,7 @@ div.myTc-list {
 
 #showChooseCity{
     width:385px;
-    left: 317px;
+    left: 328px;
     top: 100px;
     position:absolute;
     z-index:12;
@@ -625,8 +625,8 @@ div.myTc-list {
     width: 473px;
     height: 145px;
     position: absolute;
-    left: 455px;
-    top: 97px;
+    left: -49px;
+    top: 68px;
     z-index: 9;
     background: #fff;
     box-shadow: 0 0 4px 0 #ccc;
